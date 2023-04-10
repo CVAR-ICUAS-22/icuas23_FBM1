@@ -6,10 +6,11 @@ ARG CATKIN_WORKSPACE=/FBM1/cvar_ws
 USER root
 
 # Free up space
-RUN rm -rf FBM2
+RUN rm -rf FBM2 FBM1/example_fbm1_launch.sh FBM1/example_ws FBM1/results/example_fbm1_result.txt
 
 # Deps
 RUN apt-get update && apt-get install -q -y \
+    tmux \
     python3-catkin-tools \
     ros-noetic-realsense2-camera \
     ros-noetic-rtabmap-ros \
