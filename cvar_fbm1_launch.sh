@@ -2,7 +2,7 @@
 if [ "$#" -ne 2 ]; then
     echo "Illegal number of parameters. Usage:"
     echo "./cvar_fbm1_launch.sh </path/to/bag> <result_filename>"
-    echo "./cvar_fbm1_launch.sh dataset/FBM1_flight1.bag flight1_fbm1_result.txt" 
+    echo "./cvar_fbm1_launch.sh dataset/FBM1_flight1.bag flight1_fbm1_result.txt"
     exit -1
 fi
 echo "Evaluation bag path: $1"

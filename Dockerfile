@@ -27,7 +27,7 @@ RUN /bin/bash -c '. /opt/ros/noetic/setup.bash; catkin init'
 RUN /bin/bash -c '. /opt/ros/noetic/setup.bash; catkin build'
 # RUN catkin build --limit-status-rate 0.2
 
-COPY cvar_fbm1_launch.sh FBM1/
-
 WORKDIR $HOME/FBM1
-CMD ["./FBM1/cvar_fbm1_launch.sh"]
+COPY cvar_fbm1_launch.sh .
+
+CMD ["bash"]
